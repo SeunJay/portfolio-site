@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
+
+A modern, responsive portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
+
+## Features
+
+- 🎨 Modern and clean design
+- 🎭 Smooth animations with Framer Motion
+- 📱 Fully responsive for all devices
+- ⚡ Built with Next.js 15 App Router
+- 🎯 TypeScript for type safety
+- 💅 Styled with Tailwind CSS
+- 🚀 Optimized for performance
+
+## Tech Stack
+
+- **Framework:** Next.js 15
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Deployment:** Ready for Vercel
+
+## Project Structure
+
+```
+portfolio-website/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx             # Main page with all sections
+│   └── globals.css          # Global styles
+├── components/
+│   ├── Navbar.tsx           # Navigation bar
+│   ├── Hero.tsx             # Hero section with animations
+│   ├── About.tsx            # About section with skills
+│   ├── Projects.tsx         # Projects section with filtering
+│   ├── Contact.tsx          # Contact form
+│   ├── Footer.tsx           # Footer component
+│   └── ui/
+│       └── ProjectCard.tsx  # Reusable project card
+├── lib/
+│   └── projects.ts          # Projects data
+└── public/
+    └── images/              # Image assets
+```
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Sections
+
+### Hero
+- Animated introduction with fade-in and slide-up effects
+- Call-to-action buttons
+- Social media links
+
+### About
+- Personal introduction
+- Skills showcase with animated cards
+- Progress bars for different skill categories
+
+### Projects
+- Grid layout with 6 projects
+- Filterable by category (All, Full Stack, Frontend, Backend)
+- Hover effects on project cards
+- Links to GitHub and live demos
+
+### Contact
+- Contact form with validation
+- Contact information display
+- Social media integration
+
+## Customization
+
+### Update Personal Information
+
+1. **Name and Title:**
+   - Edit `app/layout.tsx` for page metadata
+   - Edit `components/Hero.tsx` for hero section
+   - Edit `components/Footer.tsx` for footer
+
+2. **Projects:**
+   - Edit `lib/projects.ts` to add/modify projects
+
+3. **Skills:**
+   - Edit `components/About.tsx` to update skills array
+
+4. **Contact Info:**
+   - Edit `components/Contact.tsx` for contact details
+
+5. **Social Links:**
+   - Update URLs in `components/Hero.tsx`, `components/Contact.tsx`, and `components/Footer.tsx`
+
+## Build for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy to Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The easiest way to deploy is using [Vercel](https://vercel.com):
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push your code to GitHub
+2. Import your repository to Vercel
+3. Vercel will automatically detect Next.js and deploy
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+MIT License - feel free to use this template for your own portfolio!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+John Doe - Full-Stack Developer
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ using Next.js 15
