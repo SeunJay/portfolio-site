@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import duduplugs from "../public/images/duduplugs.png";
 import vaulta from "../public/images/vaulta.png";
 import eventporte from "../public/images/eventporte.png";
 import payaza from "../public/images/payaza.png";
@@ -20,11 +21,22 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "Duduplugs",
+    description:
+      "An African-focused social platform blending engagement, commerce, and community hubs for music, dance, fashion, and culture.",
+
+    image: duduplugs,
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React Query"],
+    github: "https://github.com/johndoe/ecommerce",
+    demo: "https://app.duduplugs.com/",
+    category: "Full Stack",
+  },
+  {
+    id: 2,
     title: "Vaulta",
     description:
       "A cross-border payment solution that enables fast and secure international transactions for businesses and individuals.",
-    // image:
-    //   "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+
     image: vaulta,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit"],
     github: "https://github.com/johndoe/ecommerce",
@@ -32,12 +44,11 @@ export const projects: Project[] = [
     category: "Full Stack",
   },
   {
-    id: 2,
+    id: 3,
     title: "EventPorte",
     description:
       "A modern event ticketing platform for creating, managing, and selling tickets with real-time revenue tracking",
-    // image:
-    //   "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+
     image: eventporte,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit"],
     github: "https://github.com/johndoe/task-manager",
@@ -45,12 +56,10 @@ export const projects: Project[] = [
     category: "Frontend",
   },
   {
-    id: 3,
+    id: 4,
     title: "Sloud",
     description:
       "Digital platform for merchants to manage stores, process payments, and track business analytics.",
-    // image:
-    //   "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80",
     image: sloud,
     technologies: ["React", "Typescript", "Tailwind CSS", "Node.js", "MongoDB"],
     github: "https://github.com/johndoe/weather-dashboard",
@@ -58,11 +67,9 @@ export const projects: Project[] = [
     category: "Frontend",
   },
   {
-    id: 4,
+    id: 5,
     title: "Payaza Website",
     description: "The official website of Payaza Africa",
-    // image:
-    //   "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
     image: payaza,
     technologies: ["Nuxt", "Typescript", "Tailwind CSS", "Pinia"],
     github: "https://github.com/johndoe/task-manager",
@@ -70,7 +77,7 @@ export const projects: Project[] = [
     category: "Frontend",
   },
   {
-    id: 5,
+    id: 6,
     title: "Payaza Blog",
     description: "The official Blog site of Payaza Africa",
     // image:

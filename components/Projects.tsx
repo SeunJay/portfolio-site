@@ -8,7 +8,7 @@ import { projects } from "@/lib/projects";
 export default function Projects() {
   const [filter, setFilter] = useState("All");
 
-  const categories = ["All", "Full Stack", "Frontend", "Backend"];
+  // const categories = ["All", "Full Stack", "Frontend", "Backend"];
 
   const filteredProjects =
     filter === "All"
